@@ -1,1 +1,150 @@
-<h1>Galindo pages </h1>
+<html>
+ <head>
+      <title> Formulario</title>
+	   <style>
+	 .general{
+	background-image:URL("IMG/Fondo.png");
+	background-SIZE:COVER;
+	background-repeat:NO-REPEAT;
+	background-position:CENTER;
+      border: 2px solid navy;
+      padding: 20px;
+      margin: 10px auto;
+      width: 90%;
+      text-align: center;
+    }
+	.contenedor{
+      background-color: lightblue;
+      border: 2px solid navy;
+      padding: 20px;
+      margin: 10px auto;
+      width: 50%;
+      text-align: left;
+    }
+	.contenedor1{
+      text-align: center;
+    }
+ </style>	
+</head>
+	<body>
+
+ <div class="general">
+ 
+	<header> <h1> <p style= "text-align: center;"> Formulario en HTML5 </p> </h1> </header>
+	<nav></nav>
+	<section>
+	
+<form name ="resgistro_datos" action="httt://mipagina.com/archivo.php" method="post">
+<fieldset form="registro_datos"><legend> <h3>Datos Personales</h3> </legend> 
+</center>
+ <div class="contenedor">
+<label> Nombre 
+<input type="text" size="40" name="alumno" placeholder="Escriba solo tu nombre" autofocus></label>
+<br></br>
+
+<label> Direccion </label>
+<input type="text"size="40" name="dir" placeholder="Escriba su direccion">
+<br></br>
+
+<label> Codigo Postal </label>
+<input type="text"size="40" name="cp" pattern="\d{5}" Placeholder="123445">
+<br></br>
+
+<label for="correo">Correo:</label>
+<input type="email" id="correo" name="correo" placeholder="Escribe tu correo" required multiple>
+ <br><br>
+		
+<label> Telefono </label>
+<input type="text"size="40" name="tel">
+<br></br>
+</fieldset>
+
+<fieldset> <legend><h3>Datos Adicionales</h3></legend>
+ <div class="contenedor">
+				
+<label> Edad </label>
+ <input type="text" id="edad" name="edad" list="edades">
+<datalist id="edades">
+            <option value="15">
+            <option value="16">
+            <option value="17">
+			<option value="Otro...">
+        </datalist>
+<br></br>
+
+<label> Fecha de Pago </label>
+<input type="text"size="40" name="fechap" required>
+<br></br>
+
+<label> Hora de entrada </label>
+<input type="text"size="40" name="horae" Placeholder="horas:minutos" required>
+<br></br>
+
+<label> Color Favorito </label>
+<input type="color" id="color_favorito" name="color_favorito" list="colores" placeholder="Elige tu color favorito">
+        <datalist id="colores">
+            <option value="#FF0000">
+            <option value="#00FF00">
+            <option value="#0000FF">
+        </datalist>
+<br></br>
+
+<label> Nivel de Ingles </label>
+<progress value="70" max="100"> 70% </progress>
+<br></br>
+
+<label>Visitas en Facebook </label>
+<meter value="50" min="0" max="100"> </meter>
+ </div>
+</fieldset>
+
+
+ <fieldset><legend><h3>Preferencias de Contacto y Disponibilidad</h3></legend>
+ <div class="contenedor">
+<label> Ciudad </label>
+<select name="Ciudad">
+<option value="Ciudad de Mexico"> Ciudad de Mexico </option>
+<option value="Cuautla"> Cuautla </option>
+<option value="Monterrey"> Monterrey </option>
+<option value="Matamorros">Matamorros </option>
+<option value="otro"> otro</option>
+</select>
+ 
+
+
+<br></br>
+<label for="comentarios">Comentarios</label> <br>
+<textarea name="comentarios" rows="4" cols="50" Placeholder="comienza a escribir"> </textarea> 
+<br><br>
+
+<label> Dias de la semana con Disponibilidad </label>
+<input type="checkbox" name="Dia Semana 1" value="1" required> Lunes
+<input type="checkbox" name="Dia Semana 2" value="2" required> Martes
+<input type="checkbox" name="Dia Semana 3" value="3" required> Miercoles
+<input type="checkbox" name="Dia Semana 1" value="4" required> Jueves
+<input type="checkbox" name="Dia Semana 2" value="5" required> Viernes
+<input type="checkbox" name="Dia Semana 3" value="6" required> Sabado
+<input type="checkbox" name="Dia Semana 3" value="7" required> Domingo
+<br></br>
+<label> Sexo </label>
+<input type="radio" name="genero"value ="h" required> Hombre
+<input type="radio" name="genero"value ="M" required> Mujer
+<br></br>
+</fieldset>
+</div>
+
+ </div>
+
+<div class="contenedor1">
+<input type="submit" name="boton" value ="Eviar">
+<input type="reset" name="button" value ="Limpiar">
+</div>
+</form>
+
+	</div>
+	</section>
+	<aside></aside>
+	<footer></footer>
+	</body>
+	</html>
+	
